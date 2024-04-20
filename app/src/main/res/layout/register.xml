@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LOGIN.Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/layar_tampilan"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/logo_witra"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Silahkan Isi Register Untuk Login"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+
+            <EditText
+                android:textColorHint="#000"
+                android:paddingLeft="10dp"
+                android:background="@drawable/form_input"
+                android:textColor="#000"
+                android:id="@+id/nama"
+                android:drawablePadding="19dp"
+                android:drawableLeft="@drawable/person"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:hint="Nama Lengkap" />
+
+            <EditText
+                android:drawablePadding="19dp"
+                android:drawableLeft="@drawable/email"
+                android:textColorHint="#000"
+                android:paddingLeft="10dp"
+                android:background="@drawable/form_input"
+                android:textColor="#000"
+                android:id="@+id/email"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:hint="Email" />
+
+            <EditText
+                android:drawablePadding="19dp"
+                android:drawableLeft="@drawable/kode"
+                android:textColorHint="#000"
+                android:paddingLeft="10dp"
+                android:background="@drawable/form_input"
+                android:textColor="#000"
+                android:id="@+id/kode_pos"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:hint="Kode Pos" />
+
+            <EditText
+                android:drawablePadding="19dp"
+                android:drawableLeft="@drawable/phone"
+                android:textColorHint="#000"
+                android:paddingLeft="10dp"
+                android:background="@drawable/form_input"
+                android:textColor="#000"
+                android:id="@+id/handphone"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:hint="No.Handphone" />
+
+            <EditText
+                android:drawablePadding="19dp"
+                android:drawableLeft="@drawable/home"
+                android:textColorHint="#000"
+                android:paddingLeft="10dp"
+                android:background="@drawable/form_input"
+                android:textColor="#000"
+                android:id="@+id/alamat"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:hint="Alamat" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Layoutinput1"
+                app:endIconMode="password_toggle"
+                android:layout_width="match_parent"
+                android:textColorHint="#000"
+                app:startIconTint="#1D18CF"
+                app:startIconDrawable="@drawable/key"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:paddingLeft="10dp"
+                    android:textColor="#000"
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/form_input"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:password="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Layoutinput2"
+                app:endIconMode="password_toggle"
+                android:layout_width="match_parent"
+                android:textColorHint="#000"
+                app:startIconTint="#1D18CF"
+                app:startIconDrawable="@drawable/key"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:paddingLeft="10dp"
+                    android:textColor="#000"
+                    android:id="@+id/confirm_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/form_input"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:password="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chek"
+                android:textColor="#2222FF"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="Data Yang Saya Daftarkan Adalah Data Yang Sebenarnya"/>
+
+
+            <ProgressBar
+                android:layout_marginTop="30dp"
+                android:visibility="gone"
+                android:id="@+id/loading"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+            </ProgressBar>
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/butt_masuk"
+                android:text="register"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/back_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="kembali ke LOGIN"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:id="@+id/btn_ket"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/tanya"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Informasi.Informasi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#2e7d32"
+            android:orientation="vertical"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/image_pesan"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:layout_marginTop="40dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/logo_witra" />
+
+        </LinearLayout>
+
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/input_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="6dp"
+            android:layout_marginTop="60dp"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Informasi Percetakan"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/infor_lokasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="3dp"
+                        android:background="@drawable/form_infor"
+                        android:drawableStart="@drawable/home"
+                        android:drawableLeft="@drawable/home"
+                        android:drawablePadding="30dp"
+                        android:focusable="false"
+                        android:text="Percetakan Witra"
+                        android:textColor="#000"
+                        android:textSize="16dp" />
+
+
+                    <TextView
+                        android:id="@+id/infor_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="12dp"
+                        android:autoLink="web|email"
+                        android:background="@drawable/form_infor"
+                        android:drawableStart="@drawable/email"
+                        android:drawableLeft="@drawable/person"
+                        android:drawablePadding="30dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="3dp"
+                        android:focusable="false"
+                        android:textColorLink="@color/design_default_color_primary_dark"
+                        android:text="www.witrairzani@gmail.com"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/infor_yahoo"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="12dp"
+                        android:autoLink="web|email"
+                        android:background="@drawable/form_infor"
+                        android:drawableStart="@drawable/email"
+                        android:drawableLeft="@drawable/person"
+                        android:drawablePadding="30dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="3dp"
+                        android:focusable="false"
+                        android:text="www.witra_irzani@yahoo.co.id"
+                        android:textColorLink="@color/design_default_color_primary_dark"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/infor_kode"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="12dp"
+                        android:autoLink="web"
+                        android:background="@drawable/form_infor"
+                        android:drawableStart="@drawable/kode"
+                        android:drawableLeft="@drawable/person"
+                        android:drawablePadding="30dp"
+                        android:focusable="false"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="3dp"
+                        android:text="Jl.Nenas,no.22A,Kel.JadiRejo, Kec.Sukajadi,Pekanbaru "
+                        android:textColor="#000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/infor_wa"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="12dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="3dp"
+                        android:autoLink="phone"
+                        android:background="@drawable/form_infor"
+                        android:drawableStart="@drawable/phone"
+                        android:drawableLeft="@drawable/person"
+                        android:drawablePadding="30dp"
+                        android:focusable="false"
+                        android:text="+6285265049482"
+                        android:textColorLink="#000"
+                        android:textSize="16dp" />
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
